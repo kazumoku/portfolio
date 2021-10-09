@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/destyle.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- メインヴィジュアルは全画面表示 -->
+  <div class="mainvisual">
+    <header id="header">
+      <nav>
+        <ul class="gnav">
+          <li>
+            <a href="#profile">Profile</a>
+          </li>
+          <li>
+            <a href="#skill-page">Skill</a>
+          </li>
+          <li>
+            <a href="#portfolio-page">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact-page">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="myname">
+      Kazumasa<br>
+      　Mokumoto
+      <!-- 擬似要素のために追加 -->
+      <span></span>
+    </h1>
+  </div>
+  <div class="mainvisual-underline"></div>
+
+  <!-- ここからメインコンテンツ -->
+  <main>
+    <!-- profile -->
+   <section id="profile" class="profile wrapper">
+    <h2 class="section-title">
+      Profile
+    </h2>
+    <div class="profile-flexbox">
+      <div class="profile-img">
+        <img src="img/profile2.jpeg" alt="">
+      </div>
+      <ul class="profile-list">
+        <li>
+          名前：杢元　主将 (もくもと　かずまさ)
+        </li>
+        <li>生年月日：1992年8月17日(29歳)</li>
+        <li>出身地：宮崎県宮崎市</li>
+        <li>趣味：筋トレ　ギター</li>
+        <li>世帯：単身(独り身)</li>
+      </ul>
+    </div>
+    <p class="profile-text">
+      初めまして。この度は私のポートフォリオを見て頂きありがとうございます。現在、宮崎キャリア・デザインスクールの「Webビジネス実践科」でWebマーケティングを中心に勉強をしています。コーディングの勉強は独学で行っており、職業訓練で学んだデザインなどの知識も活用し、デザインカンプの作成からコーディングまでを行っています。ただサイトを作るだけでなく、常にSEOやユーザビリティを心がけています。
+    </p>
+  </section>
+  <!-- Aboutページへのリンクボタン -->
+  <!-- <div class="aboutme">
+    <a id="about-btn" href="about.html"><span>About me</span></a>
+  </div> -->
+  <!-- skill -->
+  <section id="skill-page" class="skill wrapper">
+    <h2 class="section-title">
+      Skill
+    </h2>
+    <div class="skill-flexbox">
+      <dl class="skill-flexbox_item">
+        <!-- このアイコンは100%表示 -->
+        <dt class="img-100"><img src="img/html_css.png" alt=""></dt>
+        <dd>独学でHTML,CSSの基礎は習得しています。使用しているエディターはVisual Stadio Codeです。見やすくて丁寧なコーディングを心がけています。案件によってはSTUDIOを活用したWeb制作も行います。</dt>
+      </dl>
+      <dl class="skill-flexbox_item">
+        <dt><img src="img/photoshop.png" alt=""></dt>
+        <dd>Photoshopクリエイター能力認定試験エキスパートに合格しております。サイト内のバナー作成や画像の加工や編集を行います。</dt>
+      </dl>
+      <dl class="skill-flexbox_item">
+        <dt><img src="img/xd.png" alt=""></dt>
+        <dd>Webサイト制作は、デザインカンプの作成から行っており基本的にAdobeXDを使用しています。プロトタイプなども利用してクライアントにご納得いただいてからコーディング作業に入ります。</dt>
+      </dl>
+    </div> 
+  </section>
+  <!-- portfolio -->
+  <section id="portfolio-page" class="portfolio wrapper">
+    <h2 class="section-title">
+      Portfolio
+    </h2>
+    <div class="portfolio-box">
+      <dl class="portfolio-item">
+        <a href="https://heroes-cheer.studio.site/" target="_blank" rel="noopener noreferrer">
+          <dt class="portfolio-img">
+            <img src="img/heroes.jpg" alt="ヒーローズ ">
+          </dt>
+        </a>
+        <dd class="portfolio-text">
+          STUDIOを使用してスポーツクラブのHPを作成しました。
+        </dd>
+      </dl>
+      <dl class="portfolio-item">
+        <dt class="portfolio-img">
+          <img src="img/portfolio.jpg" alt="ボールペン">
+        </dt>
+        <dd class="portfolio-text">
+          Photoshopを使用して高級ボールペンのバナーを作成しました。
+        </dd>
+      </dl>
+    </div>
+  </section>
+  <!-- contact -->
+  <section id="contact-page" class="contact wrapper">
+    <h2 class="section-title">
+      Contact
+    </h2>
+    <p class="contact-text">
+      最後までご覧いただきありがとうございました。お客様とのコミュニケーションを大切に丁寧・迅速に仕事を致します。どうぞお気軽にお問い合わせください。
+    </p>
+    <!-- ここから外部ファイル化 -->
+    <form action="" method="POST">
+      <dl>
+        <dt><label for="name">お名前：</label></dt>
+        <dd><input id="name" type="text" name="your_name"></dd>
+      </dl>
+      <dl>
+        <dt><label for="email">メールアドレス：</label></dt>
+        <dd><input id="email" type="email" name="your_mailadress"></dd>
+      </dl>
+      <dl>
+        <dt><label for="title">件名：</label></dt>
+        <dd><input id="title" type="text" name="title"></dd>
+      </dl>
+      <dl>
+        <dt><label for="message">本文：</label></dt>
+        <dd><textarea id="message" name="message"></textarea></dd>
+      </dl>
+      <div id="submit-btn">
+        <input id="send_Doc" type="submit" value="送信">
+      </div>
+    </form>
+    <!-- ここまで外部ファイル化 -->
+  </section>
+</main>
+<!-- footer -->
+  <footer id="footer">
+    <p>&copy; 2021 Kazumasa Mokumoto</p>
+  </footer>
+</body>
+</html>
